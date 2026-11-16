@@ -6,6 +6,16 @@
 <meta name="color-scheme" content="dark" />
 <link rel="icon" href="data:," />
 <title>Data Universe 3D — The Agentic Network, Mapped</title>
+<meta name="description" content="The data universe of the agentic network, mapped in 3D: 12 data estates across four holdings, drawn to scale, with licence classes (cleared, noncommercial-only, excluded, research-labelled) and evidence labels on every node." />
+<link rel="canonical" href="https://graphs.agicorp.network/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="AGI Corp — Data Universe" />
+<meta property="og:title" content="Data Universe 3D — The Agentic Network, Mapped" />
+<meta property="og:description" content="12 data estates across four holdings, drawn to scale in 3D — licence fences and evidence labels on every node. Personal data is never a product; CRM/contacts are a provenance index only." />
+<meta property="og:url" content="https://graphs.agicorp.network/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Data Universe 3D — The Agentic Network, Mapped" />
+<meta name="twitter:description" content="12 data estates across four holdings, drawn to scale in 3D — licence fences and evidence labels on every node." />
 <style>
   :root{
     --bg:#070a12; --bg2:#0a0f1c; --panel:#0d1322; --panel2:#111a2e;
@@ -223,6 +233,10 @@
     *{scroll-behavior:auto!important}
   }
 </style>
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Ie Ts Ms Ee Es Rs capture Ge calculateEventProperties Os register register_once register_for_session unregister unregister_for_session js getFeatureFlag getFeatureFlagPayload isFeatureFlagEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyIdentified renderSurveyPreview identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs As createPersonProfile Is opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_out_capturing Ds getPageviewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_uW4xCD4Za7kwT9JYsVe6ZF9H6zMSFZ8ran3KZzTTdUd6',{api_host:'https://us.i.posthog.com',defaults:'2025-05-24',autocapture:true,capture_pageview:true,session_recording:{maskAllInputs:true}})
+</script>
 </head>
 <body>
 <div class="wrap">
@@ -318,7 +332,7 @@
   <!-- ============ TRAINING CORPUS SUMMARY ============ -->
   <section aria-labelledby="corpusH" id="corpusSection">
     <div class="sec-head"><h2 class="sec" id="corpusH">Training corpus — the map and its fences</h2></div>
-    <p class="sec-sub">These nodes are the training corpus map for the network's own custom LLM and for research. <strong>This is a map of the corpus and its fences — no training has happened.</strong> Eligibility is a licence and privacy fence, not a quality score. Evidence labels stay alongside: VERIFIED means counted in the holdings' records, REPORTED means stated by a source, HYPOTHESIS means a pattern to test — never a finding. Counts in each card are that class's own measures added for map accounting only; different measures are never merged into a new headline total.</p>
+    <p class="sec-sub">These nodes are the training corpus map for the network's own custom LLM and for research. <strong>This is a map of the corpus and its fences — no training has happened.</strong> Eligibility is a licence and privacy fence, not a quality score. Evidence labels stay alongside: VERIFIED means counted in the holdings' records, REPORTED means stated by a source, HYPOTHESIS means a pattern to test — never a finding. Counts in each card are that class's own measures added for map accounting only; different measures are never merged into a new headline total. Aggregate licence-class totals are under reconciliation between builds and are not restated as headline figures here — the per-estate and per-cluster figures in the estates and clusters sections below are the record to cite.</p>
     <div class="fence-note" role="note"><strong>The fences, in plain words:</strong> CLEARED = public/open data the custom LLM may train on. NONCOMMERCIAL-ONLY = CC BY-NC family, never in paid tiers. EXCLUDED = personal data and fenced licences — CRM/contacts are a provenance index only, never training data; the suppressed / never-contact cluster is doubly excluded. RESEARCH-LABELLED = hypothesis-class research, usable for research and always labelled hypothesis, never stated as findings. AURA remains screening support, never a diagnosis.</div>
     <div class="corpus-grid" id="corpusGrid" style="margin-top:16px"></div>
     <p class="sec-sub" style="margin-top:14px">Turn on <strong>Training corpus</strong> in the toolbar to foreground the rings in 3D, dim fenced (EXCLUDED) bubbles, and filter by eligibility class. In 2D, every estate card, cluster card, and table row carries its badge.</p>
@@ -412,7 +426,7 @@
   </section>
 
   <footer>
-    <p><strong style="color:var(--ink)">Sources &amp; method.</strong> All counts are the holdings' own verified figures as of 14 November 2026, labelled with their source names in the detail panel. Every cluster keeps its own measure name — filing records, filed facts, edges, pairs, trials, modules, contacts — and measures are never summed into a new headline; the 76.8M headline remains EDGAR + BioDAO primary records only. Bubble and bar sizes use a log₁₀ scale of each estate's primary count; SwarmTriage is a live demo build and carries no record count.</p>
+    <p><strong style="color:var(--ink)">Sources &amp; method.</strong> All counts are the holdings' own verified figures as of 14 November 2026, labelled with their source names in the detail panel. Every cluster keeps its own measure name — filing records, filed facts, edges, pairs, trials, modules, contacts — and measures are never summed into a new headline; the 76.8M headline remains EDGAR + BioDAO primary records only. Bubble and bar sizes use a log₁₀ scale of each estate's primary count; SwarmTriage is a demo build and carries no record count; its live state is unconfirmed (certificate invalid as of 15 November 2026).</p>
     <p><strong style="color:var(--ink)">Training corpus map.</strong> This graph is the map of the training corpus for the network's own custom LLM and for research, with its licence and privacy fences drawn in. It does not claim any training has happened. CLEARED nodes are public/open data; NONCOMMERCIAL-ONLY nodes are CC BY-NC family and never enter paid tiers; EXCLUDED nodes — including all CRM/contact nodes, which are a provenance index only — are never training data; RESEARCH-LABELLED nodes are hypothesis-class and are never stated as findings. Evidence labels (VERIFIED / REPORTED / HYPOTHESIS) sit alongside eligibility on every node. AURA, linked from the portals, is a maternal-health screening-support tool — it supports screening conversations and is never a diagnosis. Neither nonprofit claims tax-exempt status.</p>
     <p>WebXR: the “Enter VR” button activates on headsets and browsers that support immersive VR; everywhere else the universe is fully explorable with mouse, touch, and the estate list.</p>
   </footer>
@@ -481,19 +495,19 @@ var ESTATES = [
     blurb:'A cross-language map of robotics knowledge — ROS 2 simulation, training worlds, and the crosswalks that let curricula move between languages and stacks.',
     metrics:[['Languages','48'],['Sources','47'],['Crosswalks','12']],
     portal:'https://agicorp.network' },
-  { id:'swarm', name:'SwarmTriage', holding:'corp', primary:0, countLabel:'Live demo — built today',
-    blurb:'Today\u2019s Drexathon build: a swarm of fast Nace AI models triages incoming items to the right desk, with measured latency as the proof layer. Running now in labelled demo-engine mode.',
-    metrics:[['Status','Live demo'],['Built','Drexathon, 14 Nov 2026'],['Engine','Nace AI Drex']],
-    portal:'http://triage.agicorp.network' }
+  { id:'swarm', name:'SwarmTriage', holding:'corp', primary:0, countLabel:'Demo build — Drexathon, 14 Nov 2026',
+    blurb:'Today\u2019s Drexathon build: a swarm of fast Nace AI models triages incoming items to the right desk, with measured latency as the proof layer. Shown in labelled demo-engine mode; live state unconfirmed.',
+    metrics:[['Status','Demo build — live state unconfirmed'],['Built','Drexathon, 14 Nov 2026'],['Engine','Nace AI Drex']],
+    portal:'https://triage.agicorp.network' }
 ];
 
 var PORTALS = [
-  { name:'AGI Corp', url:'https://agicorp.network', note:'The operating company — data, robotics, and the agent layer.' },
+  { name:'AGI Corp', url:'https://agicorp.network', note:'AGI (Wyoming) is Inactive — Administratively Dissolved (Tax). No securities are offered. Data, robotics, and the agent layer.' },
   { name:'AGI Future Foundation', url:'https://agifuturefoundation.org', note:'Research and education — genomics, Louisiana, postpartum data.' },
   { name:'AGI Fellowship', url:'https://agifellowship.church', note:'The church — Ask Humanity, interviews, and the 20 Questions.' },
   { name:'BuilderSpace', url:'https://builderspace.tech', note:'Tours, training, and the regional build-out.' },
   { name:'Ask Humanity', url:'https://ask.fellowship.chat', note:'The interview room — start with the 20 Questions.' },
-  { name:'SwarmTriage demo', url:'http://triage.agicorp.network', note:'Today\u2019s Drexathon build, running live.' },
+  { name:'SwarmTriage demo', url:'https://triage.agicorp.network', note:'Today\u2019s Drexathon build — live state unconfirmed (certificate invalid as of 15 November 2026).' },
   { name:'AURA Maternal — preview', url:'https://muse.ai/s/aura-maternal-static-ts6z7xupxwsxwv/GxBj7xykkjiuFZQsNl7UIRuBV6gpx_7h6Gz7TD7yYrw', note:'Screening-support tool built on the PPD census. Supports screening conversations — never a diagnosis.' },
   { name:'Worlds entry — agi.lease', url:'https://www.agi.lease/', note:'The doorway to the Holodeck Pavilion and the VR/AR worlds.' }
 ];
@@ -517,7 +531,7 @@ var ESTATE_ELIG = {
   cognition:{elig:'noncommercial', licence:'MIT OCW CC BY-NC-SA (dominant) — Saylor clusters CLEARED, see clusters', evidence:'VERIFIED'},
   locator:{elig:'excluded', licence:'Operational property registry — not training data', evidence:'VERIFIED'},
   robotics:{elig:'excluded', licence:'Contains gated / unverified licences (RoboMIND, HSSD-200) — fenced until licence text is pinned', evidence:'REPORTED'},
-  swarm:{elig:'excluded', licence:'Live demo routing core — not training data', evidence:'VERIFIED'}
+  swarm:{elig:'excluded', licence:'Demo routing core — not training data', evidence:'VERIFIED'}
 };
 function eligBadge(key){ var e=ELIG[key]||ELIG.excluded; return '<span class="elig elig-'+key+'">'+e.label+'</span>'; }
 function C(name,n,label,source,elig,licence,evidence){ return {name:name,n:(n==null?null:n),label:label,source:source,elig:elig,licence:licence,evidence:evidence||'VERIFIED'}; }
@@ -679,7 +693,7 @@ function renderCards(){
       '<div class="c-count-l">'+e.countLabel+' · Licence: '+ee.licence+'</div>'+
       (e.primary
         ? '<span class="bar"><i style="width:'+Math.round(logFrac(e.primary)*100)+'%;background:'+h.css+'"></i></span>'
-        : '<span class="live-mark">● Live demo</span>');
+        : '<span class="live-mark">● Demo build</span>');
     b.addEventListener('click', function(){ selectEstate(e.id, true); document.getElementById('stage').scrollIntoView({behavior:'smooth', block:'center'}); });
     cardsEl.appendChild(b);
   });
@@ -699,7 +713,7 @@ ESTATES.slice().sort(function(a,b){return b.primary-a.primary;}).forEach(functio
   var row = document.createElement('div'); row.className='brow';
   row.innerHTML = '<span class="bl" title="'+e.name+'">'+e.name+'</span>'+
     '<span class="track"><i style="width:'+Math.max(3,Math.round(logFrac(e.primary)*100))+'%;background:'+h.css+'"></i></span>'+
-    '<span class="bv mono">'+(e.primary? fmt(e.primary):'live demo')+'</span>';
+    '<span class="bv mono">'+(e.primary? fmt(e.primary):'demo build')+'</span>';
   barEl.appendChild(row);
 });
 
@@ -906,7 +920,7 @@ function makeLabelSprite(e){
   g.fillText(name, 256, 58);
   g.fillStyle = HOLDINGS[e.holding].css;
   g.font='600 34px ui-monospace,Menlo,monospace';
-  g.fillText(e.primary? fmt(e.primary) : 'LIVE DEMO', 256, 112);
+  g.fillText(e.primary? fmt(e.primary) : 'DEMO BUILD', 256, 112);
   var tex = new THREE.CanvasTexture(c); tex.anisotropy=4;
   var mat = new THREE.SpriteMaterial({ map:tex, transparent:true, depthWrite:false });
   var sp = new THREE.Sprite(mat);
